@@ -43,9 +43,7 @@ class BlogPost
     private $draft;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="category", type="integer")
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
      */
     private $category;
 

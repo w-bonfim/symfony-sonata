@@ -38,4 +38,10 @@ services:
         class: AppBundle\Admin\CategoryAdmin
         arguments: [~, AppBundle\Entity\Category, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Category }
+            - { name: sonata.admin, manager_type: orm, label: Categoria }
+    
+    admin.blog_post:
+        class: AppBundle\Admin\BlogPostAdmin
+        arguments: [~, AppBundle\Entity\BlogPost, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Blog Post }
